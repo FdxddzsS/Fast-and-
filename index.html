@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الخاص</title>
+    <script>
+        // التحقق من عنوان URL الحالي
+        function checkURL() {
+            // العنوان المسموح به
+            const allowedURL = "https://bio.link/fast_tv_live";
+
+            // إذا كان العنوان الحالي غير مسموح به، قم بإعادة التوجيه
+            if (window.location.href !== allowedURL) {
+                window.location.href = allowedURL; // إعادة التوجيه إلى الرابط المسموح به
+            }
+        }
+
+        // تشغيل الدالة عند تحميل الصفحة
+        window.onload = checkURL;
+    </script>
+</head>
+<body>
+    <h1>مرحبًا بك في موقعي الخاص!</h1>
+    <p>هذا الموقع متاح فقط من خلال الرابط المسموح به.</p>
+
+    <!-- تضمين الصفحة المطلوبة داخل iframe -->
+    <iframe
+        src="https://high-kora.com/TOD/WEB/BEIN/admin/WEB/TV.html"
+        width="100%"
+        height="500px"
+        style="border: none;"
+        allowfullscreen
+    ></iframe>
+</body>
+</html>
